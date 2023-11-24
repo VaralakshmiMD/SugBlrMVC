@@ -1,0 +1,20 @@
+﻿@model SugBlr.Models.Promo
+
+@{
+    Layout = null;
+}
+
+<div class="component cta  ">
+    <div class="row justify-content-start">
+        <div class="col-12 col-lg-5">
+            <div class="bg-white text-dark p-5">
+                <h3 class="pb-4">@Model.Title</h3>
+                <div class="pb-3 fs-5">
+                    <div>@Html.Raw(Model.Description)</div>
+                </div>
+                <div class="text-dark fs-5 fw-bold link-wrapper"><a title="" target="@Model.CTALink.Target" class="link-arrow" href="@Model.URL">@Model.CTALink.Text</a><i class="bi bi-arrow-right red-color"></i></div>
+            </div>
+        </div>
+        <div class="col-lg-7"><img alt="The Grand Hotel, New Delhi" width="792" height="446" class="img-fluid ctaImage" src="@Model.Image"></div>
+    </div>
+</div>

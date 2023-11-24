@@ -1,0 +1,21 @@
+﻿@model SugBlr.Models.Footer
+
+@{
+    Layout = null;
+}
+<div class="container component">
+    <div class="row richtext">
+        <div class="col-4">
+            <div class="field-footer-logo">
+                <a href="/">
+                    <img src="@Model.Logo" />
+                </a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="component-content">
+                <div>@Html.Raw(Model.CopyrightText)</div>
+            </div>
+        </div>
+    </div>
+</div>

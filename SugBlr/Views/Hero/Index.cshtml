@@ -1,0 +1,24 @@
+﻿@model SugBlr.Models.Hero
+
+@{
+    Layout = null;
+}
+<div class="component hero  ">
+    <div class="component-content" id="box-search">
+        <div class="thumbnail">
+            <img alt="Delhi" width="4160" height="3120" class="img-fluid heroimage" src="@Model.BackgroundImage">
+            <div class="col-12">
+                <div class="caption d-md-block hero-backdrop">
+                    <p class="hero-label">@Model.SubTitle</p>
+                    <h1 class="h1 py-4">@Model.Title</h1>
+                    <div class="hero-text">
+                        <div>
+                            @Html.Raw(Model.Description)
+                        </div>
+                        <a href="@Model.URL" class="link-button primary" title="" target="@Model.CTALink.Target" rel="noopener noreferrer">@Model.CTALink.Text</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
